@@ -8,11 +8,11 @@ excerpt_es: "Las caídas son la principal causa de lesiones fatales y no fatales
 ---
 
 <div class="lang-en" markdown="1">
-Falls are more than just a passing concern—they are a critical threat to the independence, mobility, and lifespan of our aging population. As a neurosurgeon, I often see the devastating aftermath of falls: severe traumatic brain injuries (TBIs), subdural hematomas, and complex spinal fractures. 
+Falls are more than just a passing concern: they are a critical threat to the independence, mobility, and lifespan of our aging population. As a neurosurgeon, I often see the devastating aftermath of falls: severe traumatic brain injuries (TBIs), subdural hematomas, and complex spinal fractures. 
 
-However, many of these devastating events are distinctly preventable through proactive, targeted strategies that address the neurological and biomechanical root causes of balance loss.
+However, many of these devastating events are distinctly preventable through proactive, targeted strategies that address the neurosurgical and biomechanical root causes of balance loss.
 
-## The Neurological Roots of Falling
+## The Neurosurgical Roots of Falling
 As we age, several interconnected systems begin to decline:
 1. **Proprioception:** The body's ability to sense its location and movements in space diminishes, slowing reaction times.
 2. **Vestibular Function:** The inner ear components responsible for balance can degrade, causing dizziness or vertigo.
@@ -34,17 +34,17 @@ The brain relies heavily on sensory input to maintain a vertical posture. Catara
 Our homes should adapt as we age. Advanced preventative care includes installing proper grab bars in high-risk zones (bathrooms), maximizing ambient lighting to prevent shadows that look like steps, and wearing proper, supportive footwear indoors.
 
 ## The Neurosurgical Imperative
-If a fall does occur, immediate neurological evaluation is paramount—especially if the patient is on blood thinners. We have advanced, minimally invasive surgical techniques today to evacuate hematomas safely, but time is always of the essence.
+If a fall does occur, immediate neurosurgical evaluation is paramount, especially if the patient is on blood thinners. We have advanced, minimally invasive surgical techniques today to evacuate hematomas safely, but time is always of the essence.
 
-*Prevention is the ultimate cure.* By taking a proactive stance on neurological health, we can ensure our seniors maintain their dignity, independence, and quality of life for years to come.
+*Prevention is the ultimate cure.* By taking a proactive stance on neurosurgical health, we can ensure our seniors maintain their dignity, independence, and quality of life for years to come.
 </div>
 
 <div class="lang-es" markdown="1">
 Las caídas son más que una simple preocupación pasajera: son una amenaza crítica para la independencia, la movilidad y la esperanza de vida de nuestra población que envejece. Como neurocirujana, a menudo veo las devastadoras secuelas de las caídas: lesiones cerebrales traumáticas graves (TBI), hematomas subdurales y fracturas espinales complejas.
 
-Sin embargo, muchos de estos eventos devastadores son claramente prevenibles a través de estrategias proactivas y dirigidas que abordan las causas fundamentales neurológicas y biomecánicas de la pérdida de equilibrio.
+Sin embargo, muchos de estos eventos devastadores son claramente prevenibles a través de estrategias proactivas y dirigidas que abordan las causas fundamentales neuroquirúrgicas y biomecánicas de la pérdida de equilibrio.
 
-## Las Raíces Neurológicas de las Caídas
+## Las Raíces Neuroquirúrgicas de las Caídas
 A medida que envejecemos, varios sistemas interconectados comienzan a declinar:
 1. **Propiocepción:** La capacidad del cuerpo para percibir su ubicación y movimientos en el espacio disminuye, ralentizando los tiempos de reacción.
 2. **Función Vestibular:** Los componentes del oído interno responsables del equilibrio pueden degradarse, causando mareos o vértigo.
@@ -66,7 +66,7 @@ El cerebro depende en gran medida de la entrada sensorial para mantener una post
 Nuestros hogares deben adaptarse a medida que envejecemos. El cuidado preventivo avanzado incluye la instalación de barras de apoyo adecuadas en zonas de alto riesgo (baños), la maximización de la iluminación ambiental para evitar sombras que parecen escalones y el uso de calzado adecuado y de apoyo en el interior.
 
 ## El Imperativo Neuroquirúrgico
-Si ocurre una caída, la evaluación neurológica inmediata es fundamental, especialmente si el paciente está tomando anticoagulantes. Hoy contamos con técnicas quirúrgicas avanzadas y mínimamente invasivas para evacuar hematomas de manera segura, pero el tiempo siempre es esencial.
+Si ocurre una caída, la evaluación neuroquirúrgica inmediata es fundamental, especialmente si el paciente está tomando anticoagulantes. Hoy contamos con técnicas quirúrgicas avanzadas y mínimamente invasivas para evacuar hematomas de manera segura, pero el tiempo siempre es esencial.
 
-*La prevención es la cura definitiva.* Al adoptar una postura proactiva sobre la salud neurológica, podemos asegurar que nuestros adultos mayores mantengan su dignidad, independencia y calidad de vida en los años venideros.
+*La prevención es la cura definitiva.* Al adoptar una postura proactiva sobre la salud neuroquirúrgica, podemos asegurar que nuestros adultos mayores mantengan su dignidad, independencia y calidad de vida en los años venideros.
 </div>
