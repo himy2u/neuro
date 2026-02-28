@@ -21,9 +21,19 @@
     <div class="container header-container">
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">Andrea</a>
       <nav class="site-nav">
-        <a class="page-link" href="{{ '/timeline' | relative_url }}">Timeline</a>
-        <a class="page-link" href="{{ '/contribution' | relative_url }}">Contribution</a>
-        <a class="page-link" href="{{ '/verification' | relative_url }}">Verification</a>
+        <!-- English Links -->
+        <div class="lang-en" style="display: flex; gap: 20px;">
+          <a class="page-link" href="{{ '/timeline' | relative_url }}">Timeline</a>
+          <a class="page-link" href="{{ '/contribution' | relative_url }}">Contribution</a>
+          <a class="page-link" href="{{ '/verification' | relative_url }}">Verification</a>
+        </div>
+        <!-- Spanish Links -->
+        <div class="lang-es" style="display: flex; gap: 20px;">
+          <a class="page-link" href="{{ '/timeline' | relative_url }}">Cronología</a>
+          <a class="page-link" href="{{ '/contribution' | relative_url }}">Contribución</a>
+          <a class="page-link" href="{{ '/verification' | relative_url }}">Verificación</a>
+        </div>
+        {% include lang_toggle.html %}
       </nav>
     </div>
   </header>

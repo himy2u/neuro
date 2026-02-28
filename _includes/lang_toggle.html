@@ -1,0 +1,98 @@
+<div class="lang-toggle-container">
+    <button id="lang-toggle-btn" class="lang-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+        <span class="lang-indicator en-indicator">EN</span>
+        <span class="lang-divider">|</span>
+        <span class="lang-indicator es-indicator">ES</span>
+    </button>
+</div>
+
+<script>
+    // Check local storage for preference, default to 'en'
+    const currentLang = localStorage.getItem('site_lang') || 'en';
+    document.documentElement.setAttribute('lang', currentLang);
+    document.body.classList.add('lang-' + currentLang);
+
+    function toggleLanguage() {
+        const isEn = document.body.classList.contains('lang-en');
+        const newLang = isEn ? 'es' : 'en';
+
+        // Update classes
+        document.body.classList.remove('lang-en', 'lang-es');
+        document.body.classList.add('lang-' + newLang);
+        document.documentElement.setAttribute('lang', newLang);
+
+        // Save preference
+        localStorage.setItem('site_lang', newLang);
+    }
+</script>
+
+<style>
+    .lang-toggle-container {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .lang-btn {
+        background: none;
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 4px 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
+        font-family: inherit;
+        transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+        background: var(--color-hover);
+        color: var(--color-text);
+    }
+
+    .lang-divider {
+        color: var(--color-border);
+        font-weight: 300;
+    }
+
+    /* Active State Indicators via Body Class */
+    body.lang-en .en-indicator {
+        color: var(--color-primary);
+    }
+
+    body.lang-es .es-indicator {
+        color: var(--color-primary);
+    }
+
+    /* Global Content Visibility Logic */
+    .lang-en,
+    .lang-es {
+        display: none;
+    }
+
+    body.lang-en .lang-en {
+        display: block;
+    }
+
+    body.lang-es .lang-es {
+        display: block;
+    }
+
+    /* Inline elements (like spans in headings) */
+    span.lang-en,
+    span.lang-es {
+        display: none !important;
+    }
+
+    body.lang-en span.lang-en {
+        display: inline !important;
+    }
+
+    body.lang-es span.lang-es {
+        display: inline !important;
+    }
+</style>

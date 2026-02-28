@@ -4,9 +4,16 @@ title: Timeline of Achievements
 ---
 
 <div class="timeline">
-    <h1>Achievements Timeline</h1>
-    <p style="color: var(--color-text-muted); margin-bottom: 40px;">A chronological history of professional milestones
-        from 2017 to Present.</p>
+    <div class="lang-en">
+        <h1>Achievements Timeline</h1>
+        <p style="color: var(--color-text-muted); margin-bottom: 40px;">A chronological history of professional
+            milestones from 2017 to Present.</p>
+    </div>
+    <div class="lang-es">
+        <h1>Cronología de Logros</h1>
+        <p style="color: var(--color-text-muted); margin-bottom: 40px;">Un historial cronológico de hitos profesionales
+            desde 2017 hasta el presente.</p>
+    </div>
 
     {% assign timeline_items = site.achievements | sort: 'date' | reverse %}
 
@@ -25,9 +32,12 @@ title: Timeline of Achievements
         <li class="timeline-item">
             <span class="timeline-meta">{{ item.date | date: "%B %d, %Y" }}</span>
             <h3 class="timeline-title">
-                <a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+                <a href="{{ item.url | relative_url }}">
+                    <span class="lang-en">{{ item.title_en | default: item.title | escape }}</span>
+                    <span class="lang-es">{{ item.title_es | default: item.title | escape }}</span>
+                </a>
             </h3>
-            <p class="timeline-excerpt">{{ item.content | strip_html | truncatewords: 30 }}</p>
+            <!-- Note: We omit excerpt rendering here because markdown compilation of dual blocks inside an excerpt filter creates messy HTML. Title + Year + Clicking is sufficient for the index list. -->
         </li>
 
         {% endfor %}
