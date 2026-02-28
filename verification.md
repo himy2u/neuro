@@ -2,54 +2,78 @@
 layout: default
 title_en: "Credential Verification"
 title_es: "Verificación de Credenciales"
+description: "Verify medical credentials, awards, and professional records."
 ---
 
-<div class="lang-en" markdown="1">
-# Credential Verification
-
-To protect the integrity of the professional record and ensure secure communication, official verification of credentials, awards, and records can be requested.
-
-### Verification Contacts
-
-For official inquiries, primary source verification, or legal correspondence, please direct communication to:
-
-**Attorney Contact**
-- Name: [Attorney / Legal Representation Name]
-- Email: [Legal Email Address]
-- Phone: [Legal Phone Number]
-
-### Direct Institutional Verification
-
-Some records can be verified directly through their respective societal or institutional portals:
-
-- **Congress of Neurological Surgeons (CNS):** [www.cns.org](https://www.cns.org)
-- **FLANC:** [www.flanc.org](http://www.flanc.org)
-- **HCAM:** [www.hcam.gob.ec](https://hcam.iess.gob.ec/)
-
-_All attached Exhibits available upon request via the designated legal contact._
+<div class="page-header">
+  <div class="lang-en" markdown="1">
+  <h1>Credential Verification</h1>
+  <p class="lead">To protect the integrity of the professional record and ensure secure communication, official verification of credentials, awards, and records can be requested here.</p>
+  </div>
+  
+  <div class="lang-es" markdown="1">
+  <h1>Verificación de Credenciales</h1>
+  <p class="lead">Para proteger la integridad del historial profesional y garantizar una comunicación segura, se puede solicitar aquí la verificación oficial de credenciales, premios y registros.</p>
+  </div>
 </div>
 
-<div class="lang-es" markdown="1">
-# Verificación de Credenciales
+<div class="content-section">
+  
+  <div class="lang-en" markdown="1">
+  <h2>Verification Contacts</h2>
+  <p>For official inquiries, primary source verification, or legal correspondence, please direct communication to the designated legal representation.</p>
+  </div>
+  
+  <div class="lang-es" markdown="1">
+  <h2>Contactos de Verificación</h2>
+  <p>Para consultas oficiales, verificación de fuentes primarias o correspondencia legal, dirija su comunicación a la representación legal designada.</p>
+  </div>
 
-Para proteger la integridad del historial profesional y garantizar una comunicación segura, se puede solicitar la verificación oficial de credenciales, premios y registros.
+  <div class="contact-cards">
+    <div class="contact-card">
+      <div class="lang-en" markdown="1">
+      <h3>Legal Representation</h3>
+      <ul>
+        <li><strong>Name:</strong> [Attorney Name]</li>
+        <li><strong>Email:</strong> [Legal Email Address]</li>
+        <li><strong>Phone:</strong> [Legal Phone Number]</li>
+      </ul>
+      </div>
+      <div class="lang-es" markdown="1">
+      <h3>Representación Legal</h3>
+      <ul>
+        <li><strong>Nombre:</strong> [Nombre del Abogado]</li>
+        <li><strong>Email:</strong> [Correo Legal]</li>
+        <li><strong>Teléfono:</strong> [Teléfono Legal]</li>
+      </ul>
+      </div>
+    </div>
 
-### Contactos de Verificación
+    <div class="contact-card">
+      <div class="lang-en" markdown="1">
+      <h3>Institutional Portals</h3>
+      <ul>
+        <li><a href="https://www.cns.org" target="_blank" rel="noopener">Congress of Neurological Surgeons (CNS)</a></li>
+        <li><a href="http://www.flanc.org" target="_blank" rel="noopener">FLANC</a></li>
+        <li><a href="https://hcam.iess.gob.ec/" target="_blank" rel="noopener">HCAM Ecuador</a></li>
+      </ul>
+      </div>
+      <div class="lang-es" markdown="1">
+      <h3>Portales Institucionales</h3>
+      <ul>
+        <li><a href="https://www.cns.org" target="_blank" rel="noopener">Congreso de Cirujanos Neurológicos (CNS)</a></li>
+        <li><a href="http://www.flanc.org" target="_blank" rel="noopener">FLANC</a></li>
+        <li><a href="https://hcam.iess.gob.ec/" target="_blank" rel="noopener">HCAM Ecuador</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
 
-Para consultas oficiales, verificación de fuentes primarias o correspondencia legal, dirija su comunicación a:
-
-**Contacto Legal / Abogado**
-- Nombre: [Nombre del Abogado / Representación Legal]
-- Correo Electrónico: [Dirección de Correo Legal]
-- Teléfono: [Número de Teléfono Legal]
-
-### Verificación Institucional Directa
-
-Algunos registros se pueden verificar directamente a través de sus respectivos portales institucionales o de sociedades:
-
-- **Congreso de Cirujanos Neurológicos (CNS):** [www.cns.org](https://www.cns.org)
-- **FLANC:** [www.flanc.org](http://www.flanc.org)
-- **HCAM:** [www.hcam.gob.ec](https://hcam.iess.gob.ec/)
-
-_Todos los Anexos adjuntos están disponibles a pedido a través del contacto legal designado._
+  <div class="lang-en" markdown="1">
+  <p style="margin-top: 32px; font-size: 0.9rem; color: var(--color-text-muted);"><em>All attached Exhibits available upon request via the designated legal contact.</em></p>
+  </div>
+  <div class="lang-es" markdown="1">
+  <p style="margin-top: 32px; font-size: 0.9rem; color: var(--color-text-muted);"><em>Todos los Anexos adjuntos están disponibles a pedido a través del contacto legal designado.</em></p>
+  </div>
+  
 </div>

@@ -21,17 +21,23 @@ layout: default
 
   {% if page.exhibit_source %}
   <div class="exhibit-source">
-    <h3>Verification Source</h3>
-    <p>Document: <strong>{{ page.exhibit_source }}</strong></p>
+    <div class="lang-en">
+      <h3>Verification Source</h3>
+      <p>Document: <strong>{{ page.exhibit_source }}</strong></p>
+    </div>
+    <div class="lang-es">
+      <h3>Fuente de Verificación</h3>
+      <p>Documento: <strong>{{ page.exhibit_source }}</strong></p>
+    </div>
   </div>
   {% endif %}
 
   <div class="back-link">
     <div class="lang-en">
-      <a href="{{ '/timeline' | relative_url }}">&larr; Back to Timeline</a>
+      <a href="{{ '/timeline' | relative_url }}" class="btn btn-outline">&larr; Back to Timeline</a>
     </div>
     <div class="lang-es">
-      <a href="{{ '/timeline' | relative_url }}">&larr; Volver a la Cronología</a>
+      <a href="{{ '/timeline' | relative_url }}" class="btn btn-outline">&larr; Volver a la Cronología</a>
     </div>
   </div>
 </article>

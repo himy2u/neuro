@@ -1,45 +1,48 @@
 ---
 layout: default
-title: Timeline of Achievements
+title: Surgical & Academic Timeline
+description: A chronological history of professional milestones from 2017 to Present.
 ---
 
-<div class="timeline">
-    <div class="lang-en">
-        <h1>Achievements Timeline</h1>
-        <p style="color: var(--color-text-muted); margin-bottom: 40px;">A chronological history of professional
-            milestones from 2017 to Present.</p>
+<div class="timeline-page">
+    <header class="page-header">
+        <div class="lang-en">
+            <h1>Surgical & Academic Timeline</h1>
+            <p class="lead">A documented chronological history of professional milestones, academic achievements, and
+                clinical appointments.</p>
+        </div>
+        <div class="lang-es">
+            <h1>Cronología Quirúrgica y Académica</h1>
+            <p class="lead">Un historial cronológico documentado de hitos profesionales, logros académicos y
+                nombramientos clínicos.</p>
+        </div>
+    </header>
+
+    <div class="content-section">
+        {% assign timeline_items = site.achievements | sort: 'date' | reverse %}
+        {% assign current_year = '' %}
+
+        <ul class="timeline-list">
+            {% for item in timeline_items %}
+
+            {% capture item_year %}{{ item.date | date: "%Y" }}{% endcapture %}
+
+            {% if item_year != current_year %}
+            <h2 class="timeline-year-label">{{ item_year }}</h2>
+            {% assign current_year = item_year %}
+            {% endif %}
+
+            <li class="timeline-item">
+                <div class="timeline-meta">{{ item.date | date: "%B %d, %Y" }}</div>
+                <h3 class="timeline-title">
+                    <a href="{{ item.url | relative_url }}">
+                        <span class="lang-en">{{ item.title_en | default: item.title | escape }}</span>
+                        <span class="lang-es">{{ item.title_es | default: item.title | escape }}</span>
+                    </a>
+                </h3>
+            </li>
+
+            {% endfor %}
+        </ul>
     </div>
-    <div class="lang-es">
-        <h1>Cronología de Logros</h1>
-        <p style="color: var(--color-text-muted); margin-bottom: 40px;">Un historial cronológico de hitos profesionales
-            desde 2017 hasta el presente.</p>
-    </div>
-
-    {% assign timeline_items = site.achievements | sort: 'date' | reverse %}
-
-    {% assign current_year = '' %}
-
-    <ul class="timeline-list">
-        {% for item in timeline_items %}
-
-        {% capture item_year %}{{ item.date | date: "%Y" }}{% endcapture %}
-
-        {% if item_year != current_year %}
-        <h2 style="margin-left: -20px;">{{ item_year }}</h2>
-        {% assign current_year = item_year %}
-        {% endif %}
-
-        <li class="timeline-item">
-            <span class="timeline-meta">{{ item.date | date: "%B %d, %Y" }}</span>
-            <h3 class="timeline-title">
-                <a href="{{ item.url | relative_url }}">
-                    <span class="lang-en">{{ item.title_en | default: item.title | escape }}</span>
-                    <span class="lang-es">{{ item.title_es | default: item.title | escape }}</span>
-                </a>
-            </h3>
-            <!-- Note: We omit excerpt rendering here because markdown compilation of dual blocks inside an excerpt filter creates messy HTML. Title + Year + Clicking is sufficient for the index list. -->
-        </li>
-
-        {% endfor %}
-    </ul>
 </div>

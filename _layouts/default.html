@@ -4,33 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
 
-  <!-- Fonts: Inter for a clean, modern, structural look -->
+  <!-- SEO Meta Tags -->
+  <title>{{ page.title | default: site.title }} | Dr. Andrea Ortiz Ordoñez</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | default: site.title }} | Dr. Andrea Ortiz Ordoñez">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- JSON-LD Structured Data for Medical Professional -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Andrea Ortiz Ordoñez",
+    "medicalSpecialty": "Pediatric Neurosurgery",
+    "description": "{{ site.description }}",
+    "url": "{{ '/' | absolute_url }}",
+    "knowsLanguage": ["en", "es"]
+  }
+  </script>
 </head>
 
 <body>
 
   <header class="site-header">
     <div class="container header-container">
-      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">Andrea</a>
+      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">
+        <span class="lang-en">Dr. Andrea Ortiz Ordoñez</span>
+        <span class="lang-es">Dra. Andrea Ortiz Ordoñez</span>
+      </a>
       <nav class="site-nav">
         <!-- English Links -->
-        <div class="lang-en" style="display: flex; gap: 20px;">
+        <div class="lang-en site-nav">
           <a class="page-link" href="{{ '/timeline' | relative_url }}">Timeline</a>
-          <a class="page-link" href="{{ '/contribution' | relative_url }}">Contribution</a>
+          <a class="page-link" href="{{ '/contribution' | relative_url }}">U.S. Contribution</a>
           <a class="page-link" href="{{ '/verification' | relative_url }}">Verification</a>
         </div>
         <!-- Spanish Links -->
-        <div class="lang-es" style="display: flex; gap: 20px;">
+        <div class="lang-es site-nav">
           <a class="page-link" href="{{ '/timeline' | relative_url }}">Cronología</a>
-          <a class="page-link" href="{{ '/contribution' | relative_url }}">Contribución</a>
+          <a class="page-link" href="{{ '/contribution' | relative_url }}">Contribución EE.UU.</a>
           <a class="page-link" href="{{ '/verification' | relative_url }}">Verificación</a>
         </div>
         {% include lang_toggle.html %}
@@ -46,7 +74,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; {{ site.time | date: '%Y' }} Andrea. Professional Portfolio.</p>
+      <p>&copy; {{ site.time | date: '%Y' }} Dr. Andrea Ortiz Ordoñez. Professional Medical Portfolio.</p>
     </div>
   </footer>
 

@@ -4,41 +4,102 @@ title: Home
 ---
 <div class="home">
 
-    <!-- English Home Content -->
-    <div class="lang-en">
-        <h1>Dr. Andrea Ortiz Ordoñez: Specializing in Refractory Pediatric Epilepsy & Tuberous Sclerosis</h1>
-        <p>Dedicated to advancing surgical execution, driving focused clinical research, and achieving optimal outcomes
-            for complex pediatric neuropathologies within leading medical institutions.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-inner">
 
-        <div style="margin-top: 40px; margin-bottom: 40px;">
-            <a href="{{ '/timeline' | relative_url }}"
-                style="display: inline-block; padding: 12px 24px; background: var(--color-primary); color: var(--color-bg); font-weight: 500; border-radius: 6px; margin-right: 15px;">
-                View Historical Timeline
-            </a>
-            <a href="{{ '/contribution' | relative_url }}"
-                style="display: inline-block; padding: 12px 24px; border: 1px solid var(--color-border); color: var(--color-text); font-weight: 500; border-radius: 6px;">
-                Future U.S. Contribution
-            </a>
+            <div class="hero-photo">
+                <!-- If photo exists it will load, otherwise the alt styling will show -->
+                <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Dr. Andrea Ortiz Ordoñez"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>AO</div>'">
+            </div>
+
+            <div class="hero-content">
+                <!-- English Content -->
+                <div class="lang-en">
+                    <span class="hero-subtitle">Pediatric Neurosurgery Specialist</span>
+                    <h1>Refractory Pediatric Epilepsy & Tuberous Sclerosis</h1>
+                    <p class="hero-description">
+                        Dedicated to advancing surgical execution, driving focused clinical research, and achieving
+                        optimal outcomes for complex pediatric neuropathologies within leading medical institutions.
+                        Based internationally, transitioning to U.S. clinical practice.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="{{ '/timeline' | relative_url }}" class="btn btn-primary">
+                            Review Surgical Timeline
+                        </a>
+                        <a href="{{ '/contribution' | relative_url }}" class="btn btn-outline">
+                            Strategic U.S. Contribution
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Spanish Content -->
+                <div class="lang-es">
+                    <span class="hero-subtitle">Especialista en Neurocirugía Pediátrica</span>
+                    <h1>Epilepsia Pediátrica Refractaria y Esclerosis Tuberosa</h1>
+                    <p class="hero-description">
+                        Dedicada a avanzar en la ejecución quirúrgica, impulsar la investigación clínica y lograr
+                        resultados óptimos para neuropatologías pediátricas complejas en instituciones médicas líderes.
+                        Práctica internacional en transición al sistema clínico estadounidense.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="{{ '/timeline' | relative_url }}" class="btn btn-primary">
+                            Revisar Cronología Quirúrgica
+                        </a>
+                        <a href="{{ '/contribution' | relative_url }}" class="btn btn-outline">
+                            Contribución Estratégica EE.UU.
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 
-    <!-- Spanish Home Content -->
-    <div class="lang-es">
-        <h1>Dra. Andrea Ortiz Ordoñez: Especialista en Epilepsia Pediátrica Refractaria y Esclerosis Tuberosa</h1>
-        <p>Dedicada a avanzar en la ejecución quirúrgica, impulsar la investigación clínica y lograr resultados óptimos
-            para neuropatologías pediátricas complejas dentro de las principales instituciones médicas.</p>
+    <!-- Divider -->
+    <hr class="divider">
 
-        <div style="margin-top: 40px; margin-bottom: 40px;">
-            <a href="{{ '/timeline' | relative_url }}"
-                style="display: inline-block; padding: 12px 24px; background: var(--color-primary); color: var(--color-bg); font-weight: 500; border-radius: 6px; margin-right: 15px;">
-                Ver Cronología Histórica
-            </a>
-            <a href="{{ '/contribution' | relative_url }}"
-                style="display: inline-block; padding: 12px 24px; border: 1px solid var(--color-border); color: var(--color-text); font-weight: 500; border-radius: 6px;">
-                Futura Contribución a EE.UU.
-            </a>
-        </div>
-    </div>
-
+    <!-- Core Expertise Grid -->
     {% include skills.html %}
+
+    <!-- Recent Achievements Preview -->
+    <section class="section pt-0">
+        <div class="lang-en">
+            <span class="section-label">Milestones</span>
+            <h2 class="section-title">Recent Achievements</h2>
+            <p class="section-subtitle">Highlights from recent professional development and international recognitions.
+            </p>
+        </div>
+        <div class="lang-es">
+            <span class="section-label">Hitos</span>
+            <h2 class="section-title">Logros Recientes</h2>
+            <p class="section-subtitle">Aspectos destacados del desarrollo profesional reciente y reconocimientos
+                internacionales.</p>
+        </div>
+
+        <ul class="achievements-preview">
+            {% assign recent_items = site.achievements | sort: 'date' | reverse | limit: 3 %}
+            {% for item in recent_items %}
+            <li>
+                <a href="{{ item.url | relative_url }}" class="achievement-preview-card">
+                    <div class="card-year">{{ item.date | date: "%Y" }}</div>
+                    <h3 class="card-title">
+                        <span class="lang-en">{{ item.title_en | default: item.title | escape }}</span>
+                        <span class="lang-es">{{ item.title_es | default: item.title | escape }}</span>
+                    </h3>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div style="margin-top: 24px;">
+            <a href="{{ '/timeline' | relative_url }}" class="btn btn-outline"
+                style="font-size: 0.85rem; padding: 8px 16px;">
+                <span class="lang-en">View Full Timeline &rarr;</span>
+                <span class="lang-es">Ver Cronología Completa &rarr;</span>
+            </a>
+        </div>
+    </section>
+
 </div>
