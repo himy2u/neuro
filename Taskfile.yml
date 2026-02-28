@@ -1,0 +1,28 @@
+version: '3'
+
+tasks:
+  default:
+    desc: "List all available tasks"
+    cmds:
+      - task -l
+
+  install:
+    desc: "Install the required Ruby dependencies for the website"
+    cmds:
+      - gem install bundler
+      - bundle install
+
+  start:
+    desc: "Run the local development server"
+    cmds:
+      - bundle exec jekyll serve --livereload
+
+  build:
+    desc: "Build the static site into the _site folder"
+    cmds:
+      - bundle exec jekyll build
+
+  clean:
+    desc: "Clean up cached and built site files"
+    cmds:
+      - bundle exec jekyll clean
