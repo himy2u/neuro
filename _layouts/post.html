@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="achievement-detail">
+    <header class="page-header" style="text-align: left; padding: 40px 0;">
+        <h1 class="lang-en" markdown="1">{{ page.title_en | default: page.title }}</h1>
+        <h1 class="lang-es" markdown="1">{{ page.title_es | default: page.title }}</h1>
+        <div class="achievement-meta" style="font-size: 1rem; color: var(--color-text-secondary); margin-top: 10px;">
+            {{ page.date | date: "%B %d, %Y" }}
+        </div>
+    </header>
+
+    <div class="content-section">
+        {{ content }}
+    </div>
+
+    <div class="back-link" style="margin-top: 50px;">
+        <div class="lang-en">
+            <a href="{{ '/blog' | relative_url }}" class="btn btn-outline">&larr; Back to Patient Education Blog</a>
+        </div>
+        <div class="lang-es">
+            <a href="{{ '/blog' | relative_url }}" class="btn btn-outline">&larr; Volver al Blog Educativo</a>
+        </div>
+    </div>
+</article>

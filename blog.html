@@ -1,0 +1,45 @@
+---
+layout: default
+title_en: "Patient Education Blog"
+title_es: "Blog de Educación para Pacientes"
+description: "Insights, preventative care strategies, and neurological health information."
+---
+
+<div class="page-header">
+    <div class="lang-en" markdown="1">
+        <h1>Patient Education Blog</h1>
+        <p class="lead">Insights on preventative care, neurological health, and improving the quality of life for our
+            seniors.</p>
+    </div>
+
+    <div class="lang-es" markdown="1">
+        <h1>Blog Educativo</h1>
+        <p class="lead">Perspectivas sobre atención preventiva, salud neurológica y mejora de la calidad de vida de
+            nuestros adultos mayores.</p>
+    </div>
+</div>
+
+<div class="content-section" style="max-width: 800px; margin: 0 auto;">
+    <ul class="timeline-list">
+        {% for post in site.posts %}
+        <li class="timeline-item">
+            <div class="timeline-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+            <h3 class="timeline-title" style="margin-bottom: 12px;">
+                <a href="{{ post.url | relative_url }}" style="text-decoration: none;">
+                    <span class="lang-en">{{ post.title_en | default: post.title | escape }}</span>
+                    <span class="lang-es">{{ post.title_es | default: post.title | escape }}</span>
+                </a>
+            </h3>
+            <p class="lang-en" style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6;">{{
+                post.excerpt_en | default: post.excerpt | strip_html | truncatewords: 35 }}</p>
+            <p class="lang-es" style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6;">{{
+                post.excerpt_es | default: post.excerpt | strip_html | truncatewords: 35 }}</p>
+            <a href="{{ post.url | relative_url }}"
+                style="font-size: 0.9rem; font-weight: 500; color: var(--color-accent); text-transform: uppercase;">
+                <span class="lang-en">Read Full Article &rarr;</span>
+                <span class="lang-es">Leer Artículo Completo &rarr;</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
