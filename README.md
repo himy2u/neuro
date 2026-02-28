@@ -26,16 +26,16 @@ cd neuro
 ```
 
 ### Step 3: Install Dependencies
-Now that you are inside the `neuro` folder, install the Jekyll software that builds the site:
+Now that you are inside the `neuro` folder, install the required dependencies (Bundler and Jekyll) using our automated script:
 ```bash
-gem install jekyll bundler
-bundle install
+make install
 ```
+*(Note: If you are on Windows and `make` is not available, you can also run `gem install bundler` followed by `bundle install` manually, or use `task install` if you have Task installed).*
 
 ### Step 4: Run the Website Locally
-To see the website on your computer before publishing it:
+To see the website on your computer and have it automatically update when you change files:
 ```bash
-bundle exec jekyll serve
+make start
 ```
 Then open your web browser and go to: `http://localhost:4000`
 
