@@ -9,14 +9,22 @@ description: A documented history of patient outcomes, complex cases, and clinic
         <div class="lang-en">
             <h1>Clinical Experience & Results</h1>
             <p class="lead">A documented history of complex geriatric and spine neurosurgery cases, patient outcomes,
-                and clinical
-                impact.</p>
+                and clinical impact.</p>
         </div>
         <div class="lang-es">
             <h1>Experiencia Clínica y Resultados</h1>
             <p class="lead">Un historial documentado de casos complejos de neurocirugía geriátrica y de columna,
-                resultados en
-                pacientes e impacto clínico.</p>
+                resultados en pacientes e impacto clínico.</p>
+        </div>
+        <div class="lang-fr">
+            <h1>Expérience Clinique et Résultats</h1>
+            <p class="lead">Un historique documenté de cas complexes de neurochirurgie gériatrique et vertébrale, de
+                résultats pour les patients et d'impact clinique.</p>
+        </div>
+        <div class="lang-de">
+            <h1>Klinische Erfahrung & Ergebnisse</h1>
+            <p class="lead">Eine dokumentierte Geschichte komplexer Fälle der geriatrischen und spinalen Neurochirurgie,
+                Patientenergebnisse und klinischer Auswirkungen.</p>
         </div>
     </header>
 
@@ -40,6 +48,8 @@ description: A documented history of patient outcomes, complex cases, and clinic
                     <a href="{{ item.url | relative_url }}">
                         <span class="lang-en">{{ item.title_en | default: item.title | escape }}</span>
                         <span class="lang-es">{{ item.title_es | default: item.title | escape }}</span>
+                        <span class="lang-fr">{{ item.title_fr | default: item.title | escape }}</span>
+                        <span class="lang-de">{{ item.title_de | default: item.title | escape }}</span>
                     </a>
                 </h3>
             </li>

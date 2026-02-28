@@ -2,6 +2,8 @@
 layout: default
 title_en: "Academic Publications"
 title_es: "Publicaciones Académicas"
+title_fr: "Publications Académiques"
+title_de: "Akademische Publikationen"
 description: "Advancing the standard of care through clinical research and peer-reviewed publications."
 ---
 
@@ -14,6 +16,13 @@ description: "Advancing the standard of care through clinical research and peer-
   <div class="lang-es" markdown="1">
   <h1>Publicaciones Académicas e Investigación</h1>
   <p class="lead">Compromiso con el avance de la ciencia neuroquirúrgica a través de la investigación clínica continua, prácticas basadas en evidencia y colaboración internacional.</p>
+  <div class="lang-fr" markdown="1">
+  <h1>Publications Académiques et Recherche</h1>
+  <p class="lead">Engagement à faire progresser la science neurochirurgicale par une recherche clinique continue, des pratiques basées sur des preuves et une collaboration internationale.</p>
+  </div>
+  <div class="lang-de" markdown="1">
+  <h1>Akademische Publikationen & Forschung</h1>
+  <p class="lead">Engagement für den Fortschritt der neurochirurgischen Wissenschaft durch kontinuierliche klinische Forschung, evidenzbasierte Praktiken und internationale Zusammenarbeit.</p>
   </div>
 </div>
 
@@ -65,6 +74,56 @@ description: "Advancing the standard of care through clinical research and peer-
         <div class="timeline-meta">2018 - Congreso Latinoamericano de Neurocirugía (Bolivia)</div>
         <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Aneurismas de la Arteria Comunicante Posterior</a></h3>
         <p>Presentación de investigaciones críticas y avances procedimentales sobre el manejo quirúrgico de aneurismas complejos de la arteria comunicante posterior en entornos de recursos limitados.</p>
+    </li>
+  </ul>
+  </div>
+
+  <div class="lang-fr" markdown="1">
+  <h2>Faire progresser la norme de soins</h2>
+  <p>Ma pratique clinique est étroitement liée à une recherche académique rigoureuse. En analysant de près les résultats dans les cas gériatriques et vertébraux complexes, particulièrement en ce qui concerne les conditions neurochirurgicales réfractaires, je vise à apporter des données significatives à la communauté médicale mondiale.</p>
+  <p>Vous trouverez ci-dessous une sélection de publications récentes évaluées par des pairs, d'études de cas et de présentations données lors de congrès médicaux internationaux.</p>
+
+  <h2 style="margin-top: 50px;">Sélection de publications et de présentations au congrès</h2>
+  <ul class="timeline-list">
+    <li class="timeline-item">
+        <div class="timeline-meta">Publication - Article de revue</div>
+        <h3 class="timeline-title"><a href="https://actascientific.com/ASCR/pdf/ASCR-02-0156.pdf" target="_blank" style="text-decoration: none;">Examen de la Neurocysticercose</a></h3>
+        <p>Un examen clinique et chirurgical complet de cas très complexes de neurocysticercose, détaillant les stratégies opératoires et les résultats à long terme.</p>
+    </li>
+    <li class="timeline-item">
+        <div class="timeline-meta">2022 - Conférence de neurochirurgie de Miami</div>
+        <h3 class="timeline-title"><a href="{{ '/assets/papers/cystic-meningioma-2022.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Méningiome Kystique : Adapter l'Excellence</a></h3>
+        <p>Sélectionnée pour représenter l'Équateur à cette prestigieuse conférence internationale, présentant des résultats sur l'intervention chirurgicale avancée pour les méningiomes kystiques.</p>
+    </li>
+    <li class="timeline-item">
+        <div class="timeline-meta">2018 - Congrès latino-américain de neurochirurgie (Bolivie)</div>
+        <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Anévrismes de l'Artère Communicante Postérieure</a></h3>
+        <p>Présentation de recherches critiques et d'avancées procédurales sur la gestion chirurgicale des anévrismes complexes de l'artère communicante postérieure dans des environnements à ressources limitées.</p>
+    </li>
+  </ul>
+  </div>
+
+  <div class="lang-de" markdown="1">
+  <h2>Den Versorgungsstandard weiterentwickeln</h2>
+  <p>Meine klinische Praxis ist tief mit strenger akademischer Forschung verflochten. Durch die genaue Analyse der Ergebnisse in komplexen geriatrischen und spinalen Fällen, insbesondere in Bezug auf refraktäre neurochirurgische Erkrankungen, möchte ich der globalen medizinischen Gemeinschaft aussagekräftige Daten zur Verfügung stellen.</p>
+  <p>Unten finden Sie eine kuratierte Auswahl aktueller, von Experten begutachteter Publikationen, Fallstudien und Präsentationen auf internationalen medizinischen Kongressen.</p>
+
+  <h2 style="margin-top: 50px;">Ausgewählte Publikationen & Kongresspräsentationen</h2>
+  <ul class="timeline-list">
+    <li class="timeline-item">
+        <div class="timeline-meta">Publikation - Fachartikel</div>
+        <h3 class="timeline-title"><a href="https://actascientific.com/ASCR/pdf/ASCR-02-0156.pdf" target="_blank" style="text-decoration: none;">Rückblick auf Neurozystizerkose</a></h3>
+        <p>Eine umfassende klinische und chirurgische Untersuchung hochkomplexer Fälle von Neurozystizerkose, in der operative Strategien und Langzeitergebnisse detailliert beschrieben werden.</p>
+    </li>
+    <li class="timeline-item">
+        <div class="timeline-meta">2022 - Miami Neurochirurgie-Konferenz</div>
+        <h3 class="timeline-title"><a href="{{ '/assets/papers/cystic-meningioma-2022.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Zystisches Meningeom: Exzellenz anpassen</a></h3>
+        <p>Ausgewählt, um Ecuador auf dieser renommierten internationalen Konferenz zu vertreten und Ergebnisse zu fortgeschrittenen chirurgischen Eingriffen bei zystischen Meningeomen vorzustellen.</p>
+    </li>
+    <li class="timeline-item">
+        <div class="timeline-meta">2018 - Lateinamerikanischer Neurochirurgie-Kongress (Bolivien)</div>
+        <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Aneurismen der Arteria communicans posterior</a></h3>
+        <p>Präsentation kritischer Forschungsarbeiten und verfahrenstechnischer Fortschritte beim chirurgischen Management komplexer Aneurismen der Arteria communicans posterior in ressourcenbeschränkten Umgebungen.</p>
     </li>
   </ul>
   </div>

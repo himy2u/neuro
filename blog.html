@@ -2,6 +2,8 @@
 layout: default
 title_en: "Patient Education Blog"
 title_es: "Blog de Educación para Pacientes"
+title_fr: "Blog d'Éducation des Patients"
+title_de: "Patienten-Bildungsblog"
 description: "Insights, preventative care strategies, and neurosurgical health information."
 ---
 
@@ -28,16 +30,24 @@ description: "Insights, preventative care strategies, and neurosurgical health i
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none;">
                     <span class="lang-en">{{ post.title_en | default: post.title | escape }}</span>
                     <span class="lang-es">{{ post.title_es | default: post.title | escape }}</span>
+                    <span class="lang-fr">{{ post.title_fr | default: post.title | escape }}</span>
+                    <span class="lang-de">{{ post.title_de | default: post.title | escape }}</span>
                 </a>
             </h3>
             <p class="lang-en" style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6;">{{
                 post.excerpt_en | default: post.excerpt | strip_html | truncatewords: 35 }}</p>
             <p class="lang-es" style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6;">{{
                 post.excerpt_es | default: post.excerpt | strip_html | truncatewords: 35 }}</p>
+            <p class="lang-fr" style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6;">{{
+                post.excerpt_fr | default: post.excerpt | strip_html | truncatewords: 35 }}</p>
+            <p class="lang-de" style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6;">{{
+                post.excerpt_de | default: post.excerpt | strip_html | truncatewords: 35 }}</p>
             <a href="{{ post.url | relative_url }}"
                 style="font-size: 0.9rem; font-weight: 500; color: var(--color-accent); text-transform: uppercase;">
                 <span class="lang-en">Read Full Article &rarr;</span>
                 <span class="lang-es">Leer Artículo Completo &rarr;</span>
+                <span class="lang-fr">Lire l'article complet &rarr;</span>
+                <span class="lang-de">Vollständigen Artikel lesen &rarr;</span>
             </a>
         </li>
         {% endfor %}

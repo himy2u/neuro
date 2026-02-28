@@ -1,98 +1,179 @@
-<div class="lang-toggle-container">
-    <button id="lang-toggle-btn" class="lang-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
-        <span class="lang-indicator en-indicator">EN</span>
-        <span class="lang-divider">|</span>
-        <span class="lang-indicator es-indicator">ES</span>
+<div class="lang-dropdown-container">
+    <button id="lang-menu-btn" aria-haspopup="true" aria-expanded="false" onclick="toggleLangMenu()">
+        🌐 <span id="current-lang-flag">🇺🇸</span> <span id="current-lang-text">English</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="margin-left:5px;">
+            <path d="M6 9l6 6 6-6" />
+        </svg>
     </button>
+
+    <div id="lang-dropdown-menu" class="lang-menu" role="menu" style="display: none;">
+        <button role="menuitem" onclick="setLanguage('en')">🇺🇸 English (EN)</button>
+        <button role="menuitem" onclick="setLanguage('es')">🇪🇨 Español (ES)</button>
+        <button role="menuitem" onclick="setLanguage('fr')">🇫🇷 Français (FR)</button>
+        <button role="menuitem" onclick="setLanguage('de')">🇩🇪 Deutsch (DE)</button>
+    </div>
 </div>
 
 <script>
-    // Check local storage for preference, default to 'en'
+    const langNames = {
+        'en': 'English',
+        'es': 'Español',
+        'fr': 'Français',
+        'de': 'Deutsch'
+    };
+
+    const langFlags = {
+        'en': '🇺🇸',
+        'es': '🇪🇨',
+        'fr': '🇫🇷',
+        'de': '🇩🇪'
+    };
+
+    // Initialize Language
     const currentLang = localStorage.getItem('site_lang') || 'en';
     document.documentElement.setAttribute('lang', currentLang);
     document.body.classList.add('lang-' + currentLang);
+    document.getElementById('current-lang-text').innerText = langNames[currentLang];
+    document.getElementById('current-lang-flag').innerText = langFlags[currentLang];
 
-    function toggleLanguage() {
-        const isEn = document.body.classList.contains('lang-en');
-        const newLang = isEn ? 'es' : 'en';
+    function toggleLangMenu() {
+        const menu = document.getElementById('lang-dropdown-menu');
+        const btn = document.getElementById('lang-menu-btn');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
 
-        // Update classes
-        document.body.classList.remove('lang-en', 'lang-es');
+        if (isExpanded) {
+            menu.style.display = 'none';
+            btn.setAttribute('aria-expanded', 'false');
+        } else {
+            menu.style.display = 'block';
+            btn.setAttribute('aria-expanded', 'true');
+        }
+    }
+
+    function setLanguage(newLang) {
+        // Remove all previous lang classes
+        const classes = document.body.className.split(" ").filter(c => !c.startsWith('lang-'));
+        document.body.className = classes.join(" ").trim();
+
+        // Add new lang class
         document.body.classList.add('lang-' + newLang);
         document.documentElement.setAttribute('lang', newLang);
-
-        // Save preference
         localStorage.setItem('site_lang', newLang);
+
+        // Update UI Button Text & Flag
+        document.getElementById('current-lang-text').innerText = langNames[newLang];
+        document.getElementById('current-lang-flag').innerText = langFlags[newLang];
+
+        // Close menu
+        toggleLangMenu();
     }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+        const container = document.querySelector('.lang-dropdown-container');
+        if (!container.contains(event.target)) {
+            document.getElementById('lang-dropdown-menu').style.display = 'none';
+            document.getElementById('lang-menu-btn').setAttribute('aria-expanded', 'false');
+        }
+    });
 </script>
 
 <style>
-    .lang-toggle-container {
-        display: flex;
-        align-items: center;
+    .lang-dropdown-container {
+        position: relative;
         margin-left: 20px;
+        font-family: var(--font-primary);
     }
 
-    .lang-btn {
-        background: none;
+    #lang-menu-btn {
+        background: transparent;
         border: 1px solid var(--color-border);
-        border-radius: 4px;
-        padding: 4px 8px;
+        border-radius: 8px;
+        padding: 8px 16px;
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 6px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        color: var(--color-text-muted);
-        font-family: inherit;
-        transition: all 0.2s ease;
-    }
-
-    .lang-btn:hover {
-        background: var(--color-hover);
         color: var(--color-text);
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all var(--transition);
+        white-space: nowrap;
     }
 
-    .lang-divider {
-        color: var(--color-border);
-        font-weight: 300;
+    #lang-menu-btn:hover {
+        background: var(--color-surface);
+        border-color: var(--color-primary);
     }
 
-    /* Active State Indicators via Body Class */
-    body.lang-en .en-indicator {
+    .lang-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 8px;
+        background: white;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        box-shadow: var(--shadow-lg);
+        min-width: 150px;
+        z-index: 1000;
+        overflow: hidden;
+    }
+
+    .lang-menu button {
+        display: block;
+        width: 100%;
+        padding: 10px 16px;
+        text-align: left;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--color-text);
+        transition: background 0.2s;
+    }
+
+    .lang-menu button:hover {
+        background: var(--color-surface);
         color: var(--color-primary);
-    }
-
-    body.lang-es .es-indicator {
-        color: var(--color-primary);
+        font-weight: 500;
     }
 
     /* Global Content Visibility Logic */
     div.lang-en,
-    div.lang-es {
+    div.lang-es,
+    div.lang-fr,
+    div.lang-de,
+    h1.lang-en,
+    h1.lang-es,
+    h1.lang-fr,
+    h1.lang-de,
+    h2.lang-en,
+    h2.lang-es,
+    h2.lang-fr,
+    h2.lang-de,
+    h3.lang-en,
+    h3.lang-es,
+    h3.lang-fr,
+    h3.lang-de,
+    p.lang-en,
+    p.lang-es,
+    p.lang-fr,
+    p.lang-de {
         display: none;
     }
 
-    body.lang-en div.lang-en {
+    body.lang-en .lang-en,
+    body.lang-es .lang-es,
+    body.lang-fr .lang-fr,
+    body.lang-de .lang-de {
         display: block;
     }
 
-    body.lang-es div.lang-es {
-        display: block;
-    }
-
-    /* Inline elements (like spans in headings) */
-    span.lang-en,
-    span.lang-es {
-        display: none !important;
-    }
-
-    body.lang-en span.lang-en {
-        display: inline !important;
-    }
-
-    body.lang-es span.lang-es {
+    body.lang-en span.lang-en,
+    body.lang-es span.lang-es,
+    body.lang-fr span.lang-fr,
+    body.lang-de span.lang-de {
         display: inline !important;
     }
 </style>
