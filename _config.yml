@@ -1,35 +1,32 @@
-name: neuro
-theme: minima
-title: Andrea - Portfolio & Timeline
-description: Senior Neurocare Professional Portfolio and Timeline of Achievements (2017-2025).
-url: https://seniorneurocare.com
+url: "https://seniorneurocare.com"
 baseurl: ""
+
+# Site Settings
+title: Dr. Andrea Ortiz Ordoñez
+email: contact@seniorneurocare.com
+description: >-
+  Pediatric Neurosurgery Specialist focused on Refractory Pediatric Epilepsy & Tuberous Sclerosis. Transitioning to U.S. clinical practice.
+twitter_username: 
+github_username: himy2u
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 enforce_ssl: true
 
-# Collections Configuration
 collections:
   achievements:
     output: true
-    permalink: /timeline/:path/
+    permalink: /achievements/:slug/
 
-# Defaults Configuration
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: "pages"
+      type: "achievements"
     values:
-      layout: "default"
-  - scope:
-      path: "_achievements"
-    values:
-      layout: "achievement"
-
-# Excludes
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+      lang: "en"
