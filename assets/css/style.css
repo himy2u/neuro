@@ -1,44 +1,51 @@
 /* ============================================
-   SENIORNEUROCARE.COM — Premium Medical Portfolio
-   Design: Clean, spacious, product-style personal brand
+   SENIORNEUROCARE.COM — Accessible Medical Portfolio
+   Design: High-contrast, senior-friendly, spacious
    ============================================ */
 
-/* --- Design Tokens --- */
+/* --- Design Tokens (Senior & Accessible Focus) --- */
 :root {
-  --color-bg: #FFFFFF;
-  --color-surface: #F8FAFC;
-  --color-text: #1E293B;
-  --color-text-secondary: #64748B;
-  --color-text-muted: #94A3B8;
-  --color-accent: #0EA5E9;
-  --color-accent-dark: #0284C7;
-  --color-accent-light: #E0F2FE;
-  --color-border: #E2E8F0;
-  --color-border-light: #F1F5F9;
+  /* Warm, low-glare background */
+  --color-bg: #FDFBFA;
+  --color-surface: #FFFFFF;
+
+  /* High contrast text */
+  --color-text: #111820;
+  --color-text-secondary: #3B4A59;
+  --color-text-muted: #5C6B7A;
+
+  /* Calming, trustworthy accent colors (Deep Teal / Navy) */
+  --color-accent: #005F73;
+  --color-accent-dark: #003D4C;
+  --color-accent-light: #E0F2F1;
+
+  --color-border: #D1D5DB;
+  --color-border-light: #E5E7EB;
+
+  /* Highly legible font */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --max-width: 920px;
-  --radius: 12px;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1000px;
+  --radius: 8px;
+
+  /* Softer shadows for depth without glare */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --transition: 0.3s ease;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0F172A;
-    --color-surface: #1E293B;
-    --color-text: #F1F5F9;
-    --color-text-secondary: #94A3B8;
-    --color-text-muted: #64748B;
-    --color-accent: #38BDF8;
-    --color-accent-dark: #0EA5E9;
-    --color-accent-light: #0C4A6E;
-    --color-border: #334155;
-    --color-border-light: #1E293B;
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+    --color-bg: #121820;
+    --color-surface: #1E2631;
+    --color-text: #F3F4F6;
+    --color-text-secondary: #D1D5DB;
+    --color-text-muted: #9CA3AF;
+    --color-accent: #4FD1C5;
+    --color-accent-dark: #38B2AC;
+    --color-accent-light: #0D3F3F;
+    --color-border: #374151;
+    --color-border-light: #1F2937;
   }
 }
 
@@ -60,8 +67,10 @@ body {
   font-family: var(--font-sans);
   background-color: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.7;
-  font-size: 16px;
+  line-height: 1.8;
+  /* Increased for readability */
+  font-size: 18px;
+  /* Increased for seniors */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

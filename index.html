@@ -5,84 +5,153 @@ title: Home
 <div class="home">
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" style="padding: 100px 0 60px;">
         <div class="hero-inner">
-
-            <div class="hero-photo">
-                <!-- If photo exists it will load, otherwise the alt styling will show -->
-                <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Dr. Andrea Ortiz Ordoñez"
-                    onerror="this.outerHTML='<div class=\'photo-placeholder\'>AO</div>'">
-            </div>
 
             <div class="hero-content">
                 <!-- English Content -->
                 <div class="lang-en">
-                    <span class="hero-subtitle">Pediatric Neurosurgery Specialist</span>
-                    <h1>Refractory Pediatric Epilepsy & Tuberous Sclerosis</h1>
-                    <p class="hero-description">
-                        Dedicated to advancing surgical execution, driving focused clinical research, and achieving
-                        optimal outcomes for complex pediatric neuropathologies within leading medical institutions.
-                        Based internationally, transitioning to U.S. clinical practice.
+                    <span class="hero-subtitle">World-Class Pediatric Neurosurgery</span>
+                    <h1 style="font-size: 3.2rem; margin-bottom: 24px;">Transforming Outcomes in Complex Neurology</h1>
+                    <p class="hero-description" style="font-size: 1.25rem; max-width: 600px;">
+                        I am Dr. Andrea Ortiz Ordoñez, an international specialist in refractory pediatric epilepsy and
+                        neurocutaneous syndromes. I bring over a decade of high-stakes surgical execution to the most
+                        vulnerable pediatric populations.
                     </p>
-                    <div class="hero-actions">
-                        <a href="{{ '/timeline' | relative_url }}" class="btn btn-primary">
-                            Review Surgical Timeline
-                        </a>
-                        <a href="{{ '/contribution' | relative_url }}" class="btn btn-outline">
-                            Strategic U.S. Contribution
+                    <div class="hero-actions" style="margin-top: 32px;">
+                        <a href="{{ '/timeline' | relative_url }}" class="btn btn-primary"
+                            style="font-size: 1.1rem; padding: 14px 28px;">
+                            Review Clinical Track Record
                         </a>
                     </div>
                 </div>
 
                 <!-- Spanish Content -->
                 <div class="lang-es">
-                    <span class="hero-subtitle">Especialista en Neurocirugía Pediátrica</span>
-                    <h1>Epilepsia Pediátrica Refractaria y Esclerosis Tuberosa</h1>
-                    <p class="hero-description">
-                        Dedicada a avanzar en la ejecución quirúrgica, impulsar la investigación clínica y lograr
-                        resultados óptimos para neuropatologías pediátricas complejas en instituciones médicas líderes.
-                        Práctica internacional en transición al sistema clínico estadounidense.
+                    <span class="hero-subtitle">Neurocirugía Pediátrica de Clase Mundial</span>
+                    <h1 style="font-size: 3.2rem; margin-bottom: 24px;">Transformando Resultados en Neurología Compleja
+                    </h1>
+                    <p class="hero-description" style="font-size: 1.25rem; max-width: 600px;">
+                        Soy la Dra. Andrea Ortiz Ordóñez, especialista internacional en epilepsia pediátrica refractaria
+                        y síndromes neurocutáneos. Aporto más de una década de ejecución quirúrgica de alto riesgo a las
+                        poblaciones pediátricas más vulnerables.
                     </p>
-                    <div class="hero-actions">
-                        <a href="{{ '/timeline' | relative_url }}" class="btn btn-primary">
-                            Revisar Cronología Quirúrgica
-                        </a>
-                        <a href="{{ '/contribution' | relative_url }}" class="btn btn-outline">
-                            Contribución Estratégica EE.UU.
+                    <div class="hero-actions" style="margin-top: 32px;">
+                        <a href="{{ '/timeline' | relative_url }}" class="btn btn-primary"
+                            style="font-size: 1.1rem; padding: 14px 28px;">
+                            Revisar Historial Clínico
                         </a>
                     </div>
                 </div>
             </div>
 
+            <div class="hero-photo" style="margin-left: 20px;">
+                <!-- Profile Image Placeholder -> Place photo at assets/images/profile-main.jpg -->
+                <img src="{{ '/assets/images/profile-main.jpg' | relative_url }}" alt="Dr. Andrea Ortiz Ordoñez"
+                    style="width: 320px; height: 320px; border-radius: 16px; object-fit: cover; box-shadow: var(--shadow-lg);"
+                    onerror="this.outerHTML='<div class=\'photo-placeholder\' style=\'width: 320px; height: 320px; border-radius: 16px; font-size: 5rem;\'>AO</div>'">
+            </div>
+
         </div>
     </section>
 
-    <!-- Divider -->
-    <hr class="divider">
+    <!-- Impact Metrics Section -->
+    <section class="metrics-section"
+        style="padding: 40px 0; border-top: 1px solid var(--color-border-light); border-bottom: 1px solid var(--color-border-light); background: var(--color-surface);">
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+            <div>
+                <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-accent); line-height: 1;">1,000+
+                </div>
+                <div class="lang-en"
+                    style="font-size: 1.1rem; font-weight: 600; color: var(--color-text-secondary); margin-top: 10px;">
+                    Complex Cases Managed</div>
+                <div class="lang-es"
+                    style="font-size: 1.1rem; font-weight: 600; color: var(--color-text-secondary); margin-top: 10px;">
+                    Casos Complejos Manejados</div>
+            </div>
+            <div>
+                <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-accent); line-height: 1;">4</div>
+                <div class="lang-en"
+                    style="font-size: 1.1rem; font-weight: 600; color: var(--color-text-secondary); margin-top: 10px;">
+                    Leading Hospitals</div>
+                <div class="lang-es"
+                    style="font-size: 1.1rem; font-weight: 600; color: var(--color-text-secondary); margin-top: 10px;">
+                    Hospitales Reconocidos</div>
+            </div>
+            <div>
+                <div style="font-size: 3.5rem; font-weight: 700; color: var(--color-accent); line-height: 1;">10+</div>
+                <div class="lang-en"
+                    style="font-size: 1.1rem; font-weight: 600; color: var(--color-text-secondary); margin-top: 10px;">
+                    Years Surgical Excellence</div>
+                <div class="lang-es"
+                    style="font-size: 1.1rem; font-weight: 600; color: var(--color-text-secondary); margin-top: 10px;">
+                    Años de Excelencia Quirúrgica</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery (Operating Room / Action Shots) -->
+    <section class="section" style="padding: 80px 0;">
+        <div class="lang-en" style="text-align: center; margin-bottom: 40px;">
+            <h2 class="section-title">In the Operating Room</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Pioneering surgical intervention for severe
+                neurocutaneous disorders.</p>
+        </div>
+        <div class="lang-es" style="text-align: center; margin-bottom: 40px;">
+            <h2 class="section-title">En el Quirófano</h2>
+            <p class="section-subtitle" style="margin: 0 auto;">Intervención quirúrgica pionera para trastornos
+                neurocutáneos graves.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+            <!-- Gallery Images -> Place photos at assets/images/surgery-1.jpg and surgery-2.jpg -->
+            <div
+                style="border-radius: 12px; overflow: hidden; background: var(--color-border-light); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; position: relative;">
+                <img src="{{ '/assets/images/surgery-1.jpg' | relative_url }}" alt="Dr. Andrea in Surgery"
+                    style="width: 100%; height: 100%; object-fit: cover;"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display: none; color: var(--color-text-muted); font-weight: 500;">[ Please Add:
+                    assets/images/surgery-1.jpg ]</div>
+            </div>
+            <div
+                style="border-radius: 12px; overflow: hidden; background: var(--color-border-light); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; position: relative;">
+                <img src="{{ '/assets/images/surgery-2.jpg' | relative_url }}" alt="Dr. Andrea in Surgery"
+                    style="width: 100%; height: 100%; object-fit: cover;"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div style="display: none; color: var(--color-text-muted); font-weight: 500;">[ Please Add:
+                    assets/images/surgery-2.jpg ]</div>
+            </div>
+        </div>
+    </section>
 
     <!-- Core Expertise Grid -->
     {% include skills.html %}
 
     <!-- Recent Achievements Preview -->
-    <section class="section pt-0">
-        <div class="lang-en">
-            <span class="section-label">Milestones</span>
-            <h2 class="section-title">Recent Achievements</h2>
-            <p class="section-subtitle">Highlights from recent professional development and international recognitions.
-            </p>
-        </div>
-        <div class="lang-es">
-            <span class="section-label">Hitos</span>
-            <h2 class="section-title">Logros Recientes</h2>
-            <p class="section-subtitle">Aspectos destacados del desarrollo profesional reciente y reconocimientos
-                internacionales.</p>
+    <section class="section">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px;">
+            <div>
+                <div class="lang-en">
+                    <h2 class="section-title" style="margin-bottom: 0;">Recent Milestones</h2>
+                </div>
+                <div class="lang-es">
+                    <h2 class="section-title" style="margin-bottom: 0;">Hitos Recientes</h2>
+                </div>
+            </div>
+            <div>
+                <a href="{{ '/timeline' | relative_url }}" class="btn btn-outline" style="font-size: 0.95rem;">
+                    <span class="lang-en">View Full Timeline</span>
+                    <span class="lang-es">Ver Cronología</span>
+                </a>
+            </div>
         </div>
 
-        <ul class="achievements-preview">
+        <ul class="achievements-preview" style="grid-template-columns: repeat(3, 1fr);">
             {% assign recent_items = site.achievements | sort: 'date' | reverse | limit: 3 %}
             {% for item in recent_items %}
             <li>
-                <a href="{{ item.url | relative_url }}" class="achievement-preview-card">
+                <a href="{{ item.url | relative_url }}" class="achievement-preview-card" style="height: 100%;">
                     <div class="card-year">{{ item.date | date: "%Y" }}</div>
                     <h3 class="card-title">
                         <span class="lang-en">{{ item.title_en | default: item.title | escape }}</span>
@@ -92,14 +161,6 @@ title: Home
             </li>
             {% endfor %}
         </ul>
-
-        <div style="margin-top: 24px;">
-            <a href="{{ '/timeline' | relative_url }}" class="btn btn-outline"
-                style="font-size: 0.85rem; padding: 8px 16px;">
-                <span class="lang-en">View Full Timeline &rarr;</span>
-                <span class="lang-es">Ver Cronología Completa &rarr;</span>
-            </a>
-        </div>
     </section>
 
 </div>
