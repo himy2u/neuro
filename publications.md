@@ -28,7 +28,7 @@ description: "Advancing the standard of care through clinical research and peer-
   <ul class="timeline-list">
     <li class="timeline-item">
         <div class="timeline-meta">Publication - Journal Article</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/neurocisticercosis.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Review of Neurocysticercosis</a></h3>
+        <h3 class="timeline-title"><a href="https://actascientific.com/ASCR/pdf/ASCR-02-0156.pdf" target="_blank" style="text-decoration: none;">Review of Neurocysticercosis</a></h3>
         <p>A comprehensive clinical and surgical review of highly complex cases of neurocysticercosis, detailing operative strategies and long-term outcomes.</p>
     </li>
     <li class="timeline-item">
@@ -53,7 +53,7 @@ description: "Advancing the standard of care through clinical research and peer-
   <ul class="timeline-list">
     <li class="timeline-item">
         <div class="timeline-meta">Publicación - Artículo de Revista</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/neurocisticercosis.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Revisión de Neurocisticercosis</a></h3>
+        <h3 class="timeline-title"><a href="https://actascientific.com/ASCR/pdf/ASCR-02-0156.pdf" target="_blank" style="text-decoration: none;">Revisión de Neurocisticercosis</a></h3>
         <p>Una revisión clínica y quirúrgica exhaustiva de casos altamente complejos de neurocisticercosis, que detalla las estrategias operativas y los resultados a largo plazo.</p>
     </li>
     <li class="timeline-item">

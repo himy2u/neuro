@@ -1,10 +1,10 @@
 ---
 layout: post
-title_en: "Preventative Care for Falling in the Elderly: A Neurological Perspective"
-title_es: "Atención Preventiva de Caídas en Adultos Mayores: Una Perspectiva Neurológica"
+title_en: "Preventative Care for Falling in the Elderly: A Neurosurgical Perspective"
+title_es: "Atención Preventiva de Caídas en Adultos Mayores: Una Perspectiva Neuroquirúrgica"
 date: 2026-02-28 09:00:00 -0500
-excerpt_en: "Falls are the leading cause of fatal and non-fatal injuries for older Americans. Discover advanced neurological strategies to prevent falls and preserve mobility."
-excerpt_es: "Las caídas son la principal causa de lesiones fatales y no fatales en los adultos mayores. Descubra estrategias neurológicas avanzadas para prevenir caídas y preservar la movilidad."
+excerpt_en: "Falls are the leading cause of fatal and non-fatal injuries for older Americans. Discover advanced neurosurgical strategies to prevent falls and preserve mobility."
+excerpt_es: "Las caídas son la principal causa de lesiones fatales y no fatales en los adultos mayores. Descubra estrategias neuroquirúrgicas avanzadas para prevenir caídas y preservar la movilidad."
 ---
 
 <div class="lang-en" markdown="1">
