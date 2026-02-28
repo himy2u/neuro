@@ -767,3 +767,50 @@ a:hover {
     font-size: 0.85rem;
   }
 }
+
+/* --- iPhone SE & Extra Small Devices (320px) --- */
+@media (max-width: 400px) {
+  body {
+    font-size: 16px;
+    /* Slightly scale down baseline for very small screens */
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+    margin-bottom: 12px;
+  }
+
+  .hero-inner {
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem !important;
+  }
+
+  /* Force metrics to stack and shrink slightly */
+  .metrics-section>div {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .metrics-section div[style*="font-size: 3.5rem"] {
+    font-size: 2.8rem !important;
+  }
+
+  .page-header {
+    padding: 50px 0 !important;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}

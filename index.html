@@ -46,8 +46,8 @@ title: Home
             </div>
 
             <div class="hero-photo" style="margin-left: 20px;">
-                <!-- Profile Image Placeholder -> Place photo at assets/images/profile-main.jpg -->
-                <img src="{{ '/assets/images/profile-main.jpg' | relative_url }}" alt="Dr. Andrea Ortiz Ordoñez"
+                <!-- Profile Image Generated -->
+                <img src="{{ '/assets/images/profile-main.png' | relative_url }}" alt="Dr. Andrea Ortiz Ordoñez"
                     style="width: 320px; height: 320px; border-radius: 16px; object-fit: cover; box-shadow: var(--shadow-lg);"
                     onerror="this.outerHTML='<div class=\'photo-placeholder\' style=\'width: 320px; height: 320px; border-radius: 16px; font-size: 5rem;\'>AO</div>'">
             </div>
@@ -91,36 +91,54 @@ title: Home
         </div>
     </section>
 
-    <!-- Visual Gallery (Operating Room / Action Shots) -->
+    <!-- Visual Gallery (Comprehensive Care) -->
     <section class="section" style="padding: 80px 0;">
         <div class="lang-en" style="text-align: center; margin-bottom: 40px;">
-            <h2 class="section-title">In the Operating Room</h2>
-            <p class="section-subtitle" style="margin: 0 auto;">Pioneering surgical intervention for severe
-                neurocutaneous disorders.</p>
+            <h2 class="section-title">Comprehensive Neurological Care</h2>
+            <p class="section-subtitle" style="margin: 0 auto; max-width: 600px;">Providing a full spectrum of
+                world-class care: from highly complex operative interventions to proactive, preventative fall care for
+                senior patients.</p>
         </div>
         <div class="lang-es" style="text-align: center; margin-bottom: 40px;">
-            <h2 class="section-title">En el Quirófano</h2>
-            <p class="section-subtitle" style="margin: 0 auto;">Intervención quirúrgica pionera para trastornos
-                neurocutáneos graves.</p>
+            <h2 class="section-title">Atención Neurológica Integral</h2>
+            <p class="section-subtitle" style="margin: 0 auto; max-width: 600px;">Brindando un espectro completo de
+                atención de clase mundial: desde intervenciones operativas altamente complejas hasta atención preventiva
+                proactiva de caídas para pacientes mayores.</p>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
-            <!-- Gallery Images -> Place photos at assets/images/surgery-1.jpg and surgery-2.jpg -->
+            <!-- Advanced Surgery Image -->
             <div
-                style="border-radius: 12px; overflow: hidden; background: var(--color-border-light); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; position: relative;">
-                <img src="{{ '/assets/images/surgery-1.jpg' | relative_url }}" alt="Dr. Andrea in Surgery"
-                    style="width: 100%; height: 100%; object-fit: cover;"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <div style="display: none; color: var(--color-text-muted); font-weight: 500;">[ Please Add:
-                    assets/images/surgery-1.jpg ]</div>
+                style="border-radius: 12px; overflow: hidden; background: var(--color-surface); aspect-ratio: 4/3; box-shadow: var(--shadow-md);">
+                <img src="{{ '/assets/images/surgery-1.png' | relative_url }}" alt="Advanced Surgical precision"
+                    style="width: 100%; height: 75%; object-fit: cover;">
+                <div style="padding: 15px;">
+                    <h3 class="lang-en" style="font-size: 1.1rem; margin:0;">Complex Surgical Execution</h3>
+                    <h3 class="lang-es" style="font-size: 1.1rem; margin:0; display:none;">Ejecución Quirúrgica Compleja
+                    </h3>
+                    <p class="lang-en" style="font-size: 0.9rem; margin: 5px 0 0; color: var(--color-text-secondary);">
+                        State-of-the-art neurosurgical intervention for refractory conditions.</p>
+                    <p class="lang-es"
+                        style="font-size: 0.9rem; margin: 5px 0 0; color: var(--color-text-secondary); display:none;">
+                        Intervención neuroquirúrgica de vanguardia para condiciones refractarias.</p>
+                </div>
             </div>
+            <!-- Preventative Fall Care Image -->
             <div
-                style="border-radius: 12px; overflow: hidden; background: var(--color-border-light); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; position: relative;">
-                <img src="{{ '/assets/images/surgery-2.jpg' | relative_url }}" alt="Dr. Andrea in Surgery"
-                    style="width: 100%; height: 100%; object-fit: cover;"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <div style="display: none; color: var(--color-text-muted); font-weight: 500;">[ Please Add:
-                    assets/images/surgery-2.jpg ]</div>
+                style="border-radius: 12px; overflow: hidden; background: var(--color-surface); aspect-ratio: 4/3; box-shadow: var(--shadow-md);">
+                <img src="{{ '/assets/images/surgery-2.png' | relative_url }}" alt="Senior Preventative Fall Care"
+                    style="width: 100%; height: 75%; object-fit: cover;">
+                <div style="padding: 15px;">
+                    <h3 class="lang-en" style="font-size: 1.1rem; margin:0;">Preventative Fall Care</h3>
+                    <h3 class="lang-es" style="font-size: 1.1rem; margin:0; display:none;">Cuidado Preventivo de Caídas
+                    </h3>
+                    <p class="lang-en" style="font-size: 0.9rem; margin: 5px 0 0; color: var(--color-text-secondary);">
+                        Specialized strategies to preserve mobility and neurological health in seniors.</p>
+                    <p class="lang-es"
+                        style="font-size: 0.9rem; margin: 5px 0 0; color: var(--color-text-secondary); display:none;">
+                        Estrategias especializadas para preservar la movilidad y la salud neurológica en adultos
+                        mayores.</p>
+                </div>
             </div>
         </div>
     </section>
