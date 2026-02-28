@@ -3,6 +3,7 @@ theme: minima
 title: Andrea - Portfolio & Timeline
 description: Senior Neurocare Professional Portfolio and Timeline of Achievements (2017-2025).
 url: https://seniorneurocare.com
+baseurl: ""
 enforce_ssl: true
 
 # Collections Configuration
