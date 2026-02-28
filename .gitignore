@@ -1,0 +1,23 @@
+# Jekyll specific
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+*.gem
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Bundler
+.bundle/
+vendor/
+Gemfile.lock
+
+# Node / JS
+node_modules/
+package-lock.json
+
+# Custom requests
+.temp/
+.temp
