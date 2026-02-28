@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="achievement-post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+    </p>
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if page.exhibit_source %}
+  <div class="exhibit-source">
+    <h3>Verification Source</h3>
+    <p>Document: <strong>{{ page.exhibit_source }}</strong></p>
+  </div>
+  {% endif %}
+
+  <div class="back-link">
+    <a href="{{ '/timeline' | relative_url }}">&larr; Back to Timeline</a>
+  </div>
+</article>

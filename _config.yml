@@ -1,0 +1,33 @@
+name: neuro
+theme: minima
+title: Andrea - Portfolio & Timeline
+description: Senior Neurocare Professional Portfolio and Timeline of Achievements (2017-2025).
+url: https://seniorneurocare.com
+
+# Collections Configuration
+collections:
+  achievements:
+    output: true
+    permalink: /timeline/:path/
+
+# Defaults Configuration
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "_achievements"
+    values:
+      layout: "achievement"
+
+# Excludes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

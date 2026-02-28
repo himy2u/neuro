@@ -1,0 +1,35 @@
+---
+layout: default
+title: Timeline of Achievements
+---
+
+<div class="timeline">
+    <h1>Achievements Timeline</h1>
+    <p style="color: var(--color-text-muted); margin-bottom: 40px;">A chronological history of professional milestones
+        from 2017 to Present.</p>
+
+    {% assign timeline_items = site.achievements | sort: 'date' | reverse %}
+
+    {% assign current_year = '' %}
+
+    <ul class="timeline-list">
+        {% for item in timeline_items %}
+
+        {% capture item_year %}{{ item.date | date: "%Y" }}{% endcapture %}
+
+        {% if item_year != current_year %}
+        <h2 style="margin-left: -20px;">{{ item_year }}</h2>
+        {% assign current_year = item_year %}
+        {% endif %}
+
+        <li class="timeline-item">
+            <span class="timeline-meta">{{ item.date | date: "%B %d, %Y" }}</span>
+            <h3 class="timeline-title">
+                <a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+            </h3>
+            <p class="timeline-excerpt">{{ item.content | strip_html | truncatewords: 30 }}</p>
+        </li>
+
+        {% endfor %}
+    </ul>
+</div>
