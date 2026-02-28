@@ -3,15 +3,20 @@ layout: default
 title: Home
 ---
 <div class="home">
-    <h1>Senior Neurocare Professional</h1>
-    <p>Welcome to the professional portfolio and achievements timeline of Andrea.</p>
-    <p>Dedicated to excellence in patient care, continuous learning, and contributing to the advancement of neurosurgery
-        locally and internationally.</p>
+    <h1>Dr. Andrea Ortiz Ordoñez: Specializing in Refractory Pediatric Epilepsy & Tuberous Sclerosis</h1>
+    <p>Dedicated to advancing neurosurgical practice, driving clinical research, and achieving optimal outcomes for
+        complex pediatric pathologies on a global scale.</p>
 
-    <div style="margin-top: 40px;">
+    <div style="margin-top: 40px; margin-bottom: 40px;">
         <a href="{{ '/timeline' | relative_url }}"
-            style="display: inline-block; padding: 12px 24px; background: var(--color-primary); color: var(--color-bg); font-weight: 500; border-radius: 6px;">
+            style="display: inline-block; padding: 12px 24px; background: var(--color-primary); color: var(--color-bg); font-weight: 500; border-radius: 6px; margin-right: 15px;">
             View Historical Timeline
         </a>
+        <a href="{{ '/contribution' | relative_url }}"
+            style="display: inline-block; padding: 12px 24px; border: 1px solid var(--color-border); color: var(--color-text); font-weight: 500; border-radius: 6px;">
+            Future U.S. Contribution
+        </a>
     </div>
+
+    {% include skills.html %}
 </div>

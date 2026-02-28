@@ -21,3 +21,5 @@ package-lock.json
 # Custom requests
 .temp/
 .temp
+.tmp 
+.tmp/
