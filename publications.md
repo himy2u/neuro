@@ -42,12 +42,12 @@ description: "Advancing the standard of care through clinical research and peer-
     </li>
     <li class="timeline-item">
         <div class="timeline-meta">2022 - Miami Neurosurgery Conference</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/cystic-meningioma-2022.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Cystic Meningioma: Adapting Excellence</a></h3>
+        <h3 class="timeline-title"><a href="https://baptisthealth.net/baptist-medical-group/specialties/neurosurgery/miami-brain-symposium" target="_blank" style="text-decoration: none;">Cystic Meningioma: Adapting Excellence</a></h3>
         <p>Selected to represent Ecuador at this prestigious international conference, presenting findings on advanced surgical intervention for cystic meningiomas.</p>
     </li>
     <li class="timeline-item">
-        <div class="timeline-meta">2018 - Latin American Neurosurgery Congress (Bolivia)</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Posterior Communicating Artery Aneurysms</a></h3>
+        <div class="timeline-meta">2018 - Latin American Neurosurgery Congress (CLAN Bolivia)</div>
+        <h3 class="timeline-title"><a href="https://neurocirugiachile.org/clan2018/" target="_blank" style="text-decoration: none;">Posterior Communicating Artery Aneurysms</a></h3>
         <p>Presented critical research and procedural advancements on the surgical management of complex posterior communicating artery aneurysms in resource-constrained environments.</p>
     </li>
   </ul>
@@ -67,12 +67,12 @@ description: "Advancing the standard of care through clinical research and peer-
     </li>
     <li class="timeline-item">
         <div class="timeline-meta">2022 - Conferencia de Neurocirugía de Miami</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/cystic-meningioma-2022.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Meningioma Quístico: Adaptando la Excelencia</a></h3>
+        <h3 class="timeline-title"><a href="https://baptisthealth.net/baptist-medical-group/specialties/neurosurgery/miami-brain-symposium" target="_blank" style="text-decoration: none;">Meningioma Quístico: Adaptando la Excelencia</a></h3>
         <p>Seleccionada para representar a Ecuador en esta prestigiosa conferencia internacional, presentando hallazgos sobre la intervención quirúrgica avanzada para meningiomas quísticos.</p>
     </li>
     <li class="timeline-item">
-        <div class="timeline-meta">2018 - Congreso Latinoamericano de Neurocirugía (Bolivia)</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Aneurismas de la Arteria Comunicante Posterior</a></h3>
+        <div class="timeline-meta">2018 - Congreso Latinoamericano de Neurocirugía (CLAN Bolivia)</div>
+        <h3 class="timeline-title"><a href="https://neurocirugiachile.org/clan2018/" target="_blank" style="text-decoration: none;">Aneurismas de la Arteria Comunicante Posterior</a></h3>
         <p>Presentación de investigaciones críticas y avances procedimentales sobre el manejo quirúrgico de aneurismas complejos de la arteria comunicante posterior en entornos de recursos limitados.</p>
     </li>
   </ul>
@@ -92,12 +92,12 @@ description: "Advancing the standard of care through clinical research and peer-
     </li>
     <li class="timeline-item">
         <div class="timeline-meta">2022 - Conférence de neurochirurgie de Miami</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/cystic-meningioma-2022.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Méningiome Kystique : Adapter l'Excellence</a></h3>
+        <h3 class="timeline-title"><a href="https://baptisthealth.net/baptist-medical-group/specialties/neurosurgery/miami-brain-symposium" target="_blank" style="text-decoration: none;">Méningiome Kystique : Adapter l'Excellence</a></h3>
         <p>Sélectionnée pour représenter l'Équateur à cette prestigieuse conférence internationale, présentant des résultats sur l'intervention chirurgicale avancée pour les méningiomes kystiques.</p>
     </li>
     <li class="timeline-item">
-        <div class="timeline-meta">2018 - Congrès latino-américain de neurochirurgie (Bolivie)</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Anévrismes de l'Artère Communicante Postérieure</a></h3>
+        <div class="timeline-meta">2018 - Congrès latino-américain de neurochirurgie (CLAN Bolivie)</div>
+        <h3 class="timeline-title"><a href="https://neurocirugiachile.org/clan2018/" target="_blank" style="text-decoration: none;">Anévrismes de l'Artère Communicante Postérieure</a></h3>
         <p>Présentation de recherches critiques et d'avancées procédurales sur la gestion chirurgicale des anévrismes complexes de l'artère communicante postérieure dans des environnements à ressources limitées.</p>
     </li>
   </ul>
@@ -117,12 +117,12 @@ description: "Advancing the standard of care through clinical research and peer-
     </li>
     <li class="timeline-item">
         <div class="timeline-meta">2022 - Miami Neurochirurgie-Konferenz</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/cystic-meningioma-2022.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Zystisches Meningeom: Exzellenz anpassen</a></h3>
+        <h3 class="timeline-title"><a href="https://baptisthealth.net/baptist-medical-group/specialties/neurosurgery/miami-brain-symposium" target="_blank" style="text-decoration: none;">Zystisches Meningeom: Exzellenz anpassen</a></h3>
         <p>Ausgewählt, um Ecuador auf dieser renommierten internationalen Konferenz zu vertreten und Ergebnisse zu fortgeschrittenen chirurgischen Eingriffen bei zystischen Meningeomen vorzustellen.</p>
     </li>
     <li class="timeline-item">
-        <div class="timeline-meta">2018 - Lateinamerikanischer Neurochirurgie-Kongress (Bolivien)</div>
-        <h3 class="timeline-title"><a href="{{ '/assets/papers/posterior-communicating-artery-aneurysms-2018.pdf' | relative_url }}" target="_blank" style="text-decoration: none;">Aneurismen der Arteria communicans posterior</a></h3>
+        <div class="timeline-meta">2018 - Lateinamerikanischer Neurochirurgie-Kongress (CLAN Bolivien)</div>
+        <h3 class="timeline-title"><a href="https://neurocirugiachile.org/clan2018/" target="_blank" style="text-decoration: none;">Aneurismen der Arteria communicans posterior</a></h3>
         <p>Präsentation kritischer Forschungsarbeiten und verfahrenstechnischer Fortschritte beim chirurgischen Management komplexer Aneurismen der Arteria communicans posterior in ressourcenbeschränkten Umgebungen.</p>
     </li>
   </ul>
