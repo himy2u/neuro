@@ -1,8 +1,8 @@
 <div class="lang-dropdown-container">
     <button id="lang-menu-btn" aria-haspopup="true" aria-expanded="false" onclick="toggleLangMenu()">
-        🌐 <span id="current-lang-flag">🇺🇸</span> <span id="current-lang-text">English</span>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" style="margin-left:5px;">
+        🌐 <span id="current-lang-flag">🇺🇸</span> <span id="current-lang-code">EN</span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="margin-left:3px;">
             <path d="M6 9l6 6 6-6" />
         </svg>
     </button>
@@ -34,7 +34,7 @@
     const currentLang = localStorage.getItem('site_lang') || 'en';
     document.documentElement.setAttribute('lang', currentLang);
     document.body.classList.add('lang-' + currentLang);
-    document.getElementById('current-lang-text').innerText = langNames[currentLang];
+    document.getElementById('current-lang-code').innerText = currentLang.toUpperCase();
     document.getElementById('current-lang-flag').innerText = langFlags[currentLang];
 
     function toggleLangMenu() {
@@ -62,7 +62,7 @@
         localStorage.setItem('site_lang', newLang);
 
         // Update UI Button Text & Flag
-        document.getElementById('current-lang-text').innerText = langNames[newLang];
+        document.getElementById('current-lang-code').innerText = newLang.toUpperCase();
         document.getElementById('current-lang-flag').innerText = langFlags[newLang];
 
         // Close menu
@@ -139,28 +139,9 @@
         font-weight: 500;
     }
 
-    /* Global Content Visibility Logic */
-    div.lang-en,
-    div.lang-es,
-    div.lang-fr,
-    div.lang-de,
-    h1.lang-en,
-    h1.lang-es,
-    h1.lang-fr,
-    h1.lang-de,
-    h2.lang-en,
-    h2.lang-es,
-    h2.lang-fr,
-    h2.lang-de,
-    h3.lang-en,
-    h3.lang-es,
-    h3.lang-fr,
-    h3.lang-de,
-    p.lang-en,
-    p.lang-es,
-    p.lang-fr,
-    p.lang-de {
-        display: none;
+    /* Content Visibility Logic */
+    [class*="lang-"] {
+        display: none !important;
     }
 
     body.lang-en .lang-en,
@@ -170,11 +151,15 @@
         display: block !important;
     }
 
-    /* Fixed site-nav doubled display */
-    .site-nav-links {
-        display: none !important;
+    /* Correctly handle inline elements like title spans */
+    body.lang-en span.lang-en,
+    body.lang-es span.lang-es,
+    body.lang-fr span.lang-fr,
+    body.lang-de span.lang-de {
+        display: inline !important;
     }
 
+    /* Flex for navigation blocks */
     body.lang-en .site-nav-links.lang-en,
     body.lang-es .site-nav-links.lang-es,
     body.lang-fr .site-nav-links.lang-fr,
@@ -182,10 +167,8 @@
         display: flex !important;
     }
 
-    body.lang-en span.lang-en,
-    body.lang-es span.lang-es,
-    body.lang-fr span.lang-fr,
-    body.lang-de span.lang-de {
-        display: inline !important;
+    /* Exception for the body tag itself */
+    body[class*="lang-"] {
+        display: block !important;
     }
 </style>
