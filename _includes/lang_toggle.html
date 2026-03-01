@@ -167,7 +167,19 @@
     body.lang-es .lang-es,
     body.lang-fr .lang-fr,
     body.lang-de .lang-de {
-        display: block;
+        display: block !important;
+    }
+
+    /* Fixed site-nav doubled display */
+    .site-nav-links {
+        display: none !important;
+    }
+
+    body.lang-en .site-nav-links.lang-en,
+    body.lang-es .site-nav-links.lang-es,
+    body.lang-fr .site-nav-links.lang-fr,
+    body.lang-de .site-nav-links.lang-de {
+        display: flex !important;
     }
 
     body.lang-en span.lang-en,
