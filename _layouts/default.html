@@ -60,6 +60,13 @@
         <span class="lang-fr">Dre Andrea Ortiz Ordoñez</span>
         <span class="lang-de">Dr. Andrea Ortiz Ordoñez</span>
       </a>
+
+      <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
       <nav class="site-nav">
         <!-- English Links -->
         <div class="lang-en site-nav-links">
@@ -106,6 +113,27 @@
     </div>
   </footer>
 
+  <script>
+    // Mobile Menu Toggle Logic
+    const menuToggle = document.getElementById('mobile-menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      siteNav.classList.toggle('is-active');
+      menuToggle.classList.toggle('is-active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.page-link').forEach(link => {
+      link.addEventListener('click', () => {
+        siteNav.classList.remove('is-active');
+        menuToggle.classList.remove('is-active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 
 </html>
